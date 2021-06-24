@@ -9,6 +9,6 @@ app.get("/", (req, res) => {
 
 app.use("/users", users);
 
-app.listen(3001, () => {
+app.listen(env.process.PORT || 3000, () => {
   console.log("connected to server");
 });
